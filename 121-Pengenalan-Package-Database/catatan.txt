@@ -1,0 +1,18 @@
+Pengenalan Package Database
+1. Bahasa pemrograman Go-Lang secara default memiliki sebuah package bernama database.
+2. Package database adalah package yang berisikan kumpulan standard interface yang menjadi standard untuk berkomunikasi
+ke database.
+3. Hal ini menjadikan kode program yang kita buat untuk mengakses jenis database apapun bisa menggunakan kode yang sama.
+4. Yang berbeda hanya kode SQL yang perlu kita gunakan sesuai dengan database yang kita gunakan.
+
+Cara Kerja Package Database
+Jadi aplikasi akan memanggil sebuah database interface atau sebuah struct yang sudah didefinisikan pada sebuah package
+yang bernama Database. Kalau mau ingin terkoneksi, kita butuh yang namanya database driver. Jadi package database itu
+membutuhkan sebuah driver, dan driver-nya itu kita perlu install terlebih dahulu. Installnya bukan dalam bentuk aplikasi
+melainkan dalam bentuk library/package dengan menggunakan go modules. Lalu database driver akan mentranslate komunikasi
+ke DBMS (Database Management System) yang digunakan yaitu MySQL. Jadi kalau tanpa menggunakan database driver maka
+aplikasi kita tidak akan terkoneksi ke database melainkan akan terjadi error.
+
+MySQL
+1. Pada materi kali ini kita akan menggunakan MySQL sebagai Database Management System (DBMS).
+2. Jadi pastikan sudah mengerti tentang MySQL.
